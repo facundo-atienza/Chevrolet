@@ -14,8 +14,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     /* background-image: url(../img/azul-claro.png); */
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #b9ddf5 0%, #9599E2 100%);
+    /* background-color: #8BC6EC; */
+    background-image: linear-gradient(90deg, #b9ddf5 0%, #9599E2 100%);
 }
 
 .mainContacto{
@@ -79,6 +79,7 @@ header .botones a:link, a:visited {
 }
 
 header img {
+    border-radius: 20px;
     display: block;
     margin:auto;
     width: 200px;
@@ -132,21 +133,25 @@ section h2 {
     font-size: 2rem;
 }
 
-.modelos {
-    padding: 50px;
-}
-
 .autosCatalogo{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1pc;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }
 
 .autosCatalogo img {
     border-radius: 10px;
+    width: 300px;
+    height: 205px;
 }
 
 .deportivo {
@@ -191,6 +196,7 @@ section h2 {
     }
 
      @media only screen and (max-width: 950px) {
+        /* home */
         header .botones nav {
             display: flex;
             flex-direction: column;
@@ -206,12 +212,6 @@ section h2 {
         footer div  a:link, a:visited {
             text-decoration: none;
         }
-
-        #footer .redes a{
-            display: flex;
-            flex-direction: column;
-        }
-
         /* Catalogo */
 
         .botonesCatalogo {
@@ -232,14 +232,8 @@ section h2 {
             /* border-radius: 50%; */
         }
 
-        #footerCatalogo{
-            background-color: whitesmoke;
-            /* display: flex;
-            flex-direction: column; */
-            color: rgb(0, 0, 0);
-        }
-
-        #footerCatalogo .redesCatalogo {
+        /* home y catalogo */
+        .footer-gral .redes {
             display: flex;
             flex-direction: column;
             text-align: center;
