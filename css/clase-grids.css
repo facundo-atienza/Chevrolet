@@ -1,0 +1,13 @@
+.contenedor{
+    background: rgb(67,64,64);
+    border: black solid 2px;
+
+    height: 98vh;
+
+    display: grid;
+
+    grid-template-columns: 200px 200px 50% 10vw;
+    grid-template-rows: repeat(3, 1fr);
+
+    
+}
