@@ -1,0 +1,13 @@
+$color-principal: black;
+$color-secundario: red;
+
+%flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex($flex, $justify) {
+  display: $flex;
+  justify-content: $justify;
+}

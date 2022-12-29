@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta property="og:tittle" content="Contacto Chevrolet" />
+    <meta
+      name="description"
+      content="Seccion dedicada a preguntas y sugerencias, que el usuario podra realizar para mejorar su estadia"
+    />
+    <meta
+      name="keywords"
+      content="mensaje, buzon, email, asistencia, asesoramiento, venta, compra, contacto"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,19 +36,19 @@
   <body>
     <main class="mainContacto">
       <header>
+        <h1>Contacto</h1>
         <nav class="botonesCatalogo">
-          <!-- <ul> -->
           <a href="../index.html">Home</a>
-          <a href="../pages/catalogo.html">Catalogo</a>
-          <a href="../pages/quienes-somos.html">Quienes Somos</a>
-          <a href="../pages/contacto.html">Contacto</a>
-          <a href="../pages/iniciosecion.html">Iniciar Sesion</a>
+          <a href="./catalogo.html">Catalogo</a>
+          <a href="./quienes-somos.html">Quienes Somos</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="./iniciosesion.html">Iniciar Sesion</a>
         </nav>
       </header>
 
       <form action="">
         <div class="nombreContacto">
-          <label for="nombre-usuario">nombre y apellido</label>
+          <label for="nombre-usuario">Nombre y Apellido</label>
           <input
             type="text"
             id="nombre-usuario"
@@ -48,26 +57,25 @@
           />
         </div>
         <div class="emailContacto">
-
-            <label for="email-usuario">email</label>
-            <input
+          <label for="email-usuario">Email</label>
+          <input
             type="email"
             id="email-usuario"
             placeholder="mail@ejemplo.com"
             required
-            />
+          />
         </div>
         <div>
           <div class="asuntoContacto">
-            <label for="asunto-usuario">seleccione el asunto</label>
+            <label for="asunto-usuario">Seleccione el asunto</label>
             <select name="" id="asunto-usuario">
-              <option value="reclamo">reclamo</option>
-              <option value="consulta">consulta</option>
-              <option value="pagos">pagos</option>
-              <option value="otro">otro</option>
+              <option value="reclamo">Reclamo</option>
+              <option value="consulta">Consulta</option>
+              <option value="pagos">Pagos</option>
+              <option value="otro">Otro</option>
             </select>
           </div>
-          <label for="mensaje-usuario">ingrese su mensaje</label>
+          <label for="mensaje-usuario">Ingrese su mensaje</label>
           <textarea name="" id="mensaje-usuario" cols="30" rows="10"></textarea>
         </div>
         <div class="preguntaContacto">
@@ -75,32 +83,32 @@
           <input type="checkbox" id="novedades-form" value="acepta-novedades" />
         </div>
         <div>
-          <span>ingrese su genero</span>
+          <span>Ingrese su genero</span>
 
-          <label for="genero-hombre">hombre</label>
+          <label for="genero-hombre">Hombre</label>
           <input type="radio" name="genero" id="genero-hombre" />
 
-          <label for="genero-mujer">mujer</label>
+          <label for="genero-mujer">Mujer</label>
           <input type="radio" name="genero" id="genero-mujer" />
 
-          <label for="genero-no">prefiero no responer</label>
+          <label for="genero-no">Prefiero no responer</label>
           <input type="radio" name="genero" id="genero-no" />
         </div>
         <div class="botonContacto">
-          <!-- <input type="submit" value="enviar" /> -->
           <button type="button" class="btn btn-outline-primary">Enviar</button>
-          <!-- <input type="reset" value="resetear-formulario" /> -->
-          <button type="button" class="btn btn-outline-danger">Reseat formulario</button>
+          <button type="button" class="btn btn-outline-danger">
+            Reseat formulario
+          </button>
         </div>
       </form>
       <footer id="footer">
-        <h4>siguenos en:</h4>
+        <h4>Siguenos en:</h4>
         <div class="redes">
           <!-- <ul> -->
-          <a href="8">facebook</a>
-          <a href="">twitter</a>
-          <a href="">instagram</a>
-          <a href="">tiktok</a>
+          <a href="8">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Instagram</a>
+          <a href="">Tiktok</a>
         </div>
       </footer>
     </main>
