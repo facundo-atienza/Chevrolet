@@ -76,11 +76,11 @@ let user1 = prompt("Ingresa nuevo nombre de usuario");
 
 alert("Bienvenido, " + user1);
 
-alert("Ahora vamos a asignarte una contraseña temporal: 3456");
+alert("tu contrasenia es: 3456. Podras cambiarla en un futuro" );
 
 const contraseña = 3456;
 
-alert("Ahora, iniciá sesion, " + user1);
+alert("inicia sesion " + user1);
 
 usuario = prompt("Usuario:");
 pasword1 = prompt("Contraseña temporal:");
